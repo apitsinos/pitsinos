@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-<nav class="site-navigation" aria-label="Main navigation"><ul><li><a href="{{ '/' | relative_url }}" aria-current="page">Home</a></li><li><a href="{{ '/about.html' | relative_url }}">About</a></li><li><a href="https://github.com/apitsinos">GitHub</a></li></ul></nav>
+<nav class="site-navigation" aria-label="Main navigation"><ul><li><a href="{{ "/" | relative_url }}" aria-current="page">Home</a></li><li><a href="{{ "/about.html" | relative_url }}">About</a></li><li><a href="https://github.com/apitsinos">GitHub</a></li></ul></nav>
 <header class="site-masthead">
   <h1>Alex Pitsinos</h1>
   <h2>A personal website.</h2>
@@ -11,8 +11,14 @@ title: Home
   <h2 class="content-title divided">Welcome</h2>
   <p>I'm Alex Pitsinos. Welcome to my corner of the web.</p>
   <p>This is a place for my writing, projects, and ideas as they take shape.</p>
-  <p><a href="{{ '/about.html' | relative_url }}">More about this site &rarr;</a></p>
+  <p><a href="{{ "/about.html" | relative_url }}">More about this site &rarr;</a></p>
   <hr>
+  <h2>Writing</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> — {{ post.date | date: "%B %-d, %Y" }}</li>
+    {% endfor %}
+  </ul>
   <h2>Elsewhere</h2>
   <p>You can find me on <a href="https://github.com/apitsinos">GitHub</a>.</p>
 </main>
