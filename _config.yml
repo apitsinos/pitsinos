@@ -1,0 +1,15 @@
+title: Alex Pitsinos
+description: The personal website of Alex Pitsinos.
+url: "https://apitsinos.github.io"
+baseurl: "/pitsinos"
+lang: en
+remote_theme: patdryburgh/hitchens
+plugins:
+  - jekyll-remote-theme
+hide_search: true
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - theme-source
