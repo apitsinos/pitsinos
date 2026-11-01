@@ -1,7 +1,7 @@
 title: Alex Pitsinos
 description: The personal website of Alex Pitsinos.
-url: "https://apitsinos.github.io"
-baseurl: "/pitsinos"
+url: "https://pitsinos.com"
+baseurl: ""
 lang: en
 remote_theme: patdryburgh/hitchens
 plugins:
